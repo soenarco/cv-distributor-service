@@ -8,7 +8,6 @@ const upload = multer();
 const authRoutes = require('./routes/auth');
 const productRoute = require('./routes/productRoute');
 
-// Konfigurasi CORS
 const corsOptions = {
     origin: ['https://cv-distributor-project.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
