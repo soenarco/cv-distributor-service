@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
     res.send('Hello, CV Distributor Service!');
 });
 
-app.use('/auth', upload.none(), authRoutes);
+app.use('/v1/auth', upload.none(), authRoutes);
 app.use('/v1/product', upload.none(), productRoute);
 
 const PORT = process.env.PORT || 7000;
